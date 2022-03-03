@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* CSS reset */
+/* <======START=======> */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body, .container {
+    height: 100%;
+}
+/* <======END======> */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 460px;
+    border-radius: 20px;
+    margin-top: 60px;
+    padding: 5px;
+    box-shadow: 0 0 20px 10px hsla(219, 15%, 55%, 0.2);
+    
+}
+.qr-code {
+    padding: 10px;
+}
+
+.card-text {
+    padding: 10px 20px;
+    text-align: center;
+}
+h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: hsl(220, 15%, 55%);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover{
+    cursor: pointer;
+}
